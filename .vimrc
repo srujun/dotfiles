@@ -10,5 +10,14 @@ set ignorecase
 set smartcase
 
 if !&scrolloff
-  set scrolloff=3    " Show next 3 lines while scrolling.
+    set scrolloff=3       " Show next 3 lines while scrolling.
 endif
+
+" Specify a directory for plugins (for vim: ~/.vim/plugged)
+call plug#begin('~/.local/share/nvim/plugged')
+" Make sure you use single quotes
+
+Plug 'kien/ctrlp.vim'
+
+" Initialize plugin system
+call plug#end()
